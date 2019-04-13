@@ -1,0 +1,156 @@
+body{
+   
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+/*header{
+    background: url("./wallpaper/4k-wallpaper-backlit-blur-1661685.jpg") no-repeat center fixed;
+    min-height: 100%;
+    background-size: cover;
+    
+}*/
+
+.container{
+   /* background: url("./wallpaper/4k-wallpaper-backlit-blur-1661685.jpg") no-repeat center fixed;
+    
+    background-size: cover;
+    */
+    background: rgba(0, 0, 0, .5);
+    position: relative;
+    width: 100%;
+    height: 80%;
+    overflow:hidden;
+    display: block;
+
+}
+
+.myvideo{
+  left: 50%;
+  min-height: 50%;
+  min-width: 100%;
+  position: fixed;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  z-index: -99;
+    
+}
+
+
+main{
+    background: url("./wallpaper/blur-colorful-colourful-21492.jpg") no-repeat center fixed;
+    min-height: 80%;
+    min-width: 100%;
+    background-size: cover;
+    
+}
+
+.wrap{
+    background: rgba(0, 0, 0, .5);
+    z-index:1;
+}
+footer{
+    background: url("./wallpaper/robert-bock-88168-unsplash.jpg") no-repeat center fixed;
+    min-height: 100%;
+    min-width: 100%;
+    background-size: cover;
+}
+.navigationbar{
+    width: 90%;
+    display: flex;
+    background-color: rgba(0, 0, 0, .5);
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    animation: animatemenu 1000ms ease-in-out forwards;
+    position: fixed;
+    text-align: center;
+    left: 5%;
+    z-index:1;
+
+
+}
+
+.pagename{
+    display: flex;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    font-weight: bold;
+    margin-left:15px ;
+    justify-content: space-between;
+    
+}
+
+.pagename #menu-icon{
+    display: none;
+}
+
+.tw{
+    color: red;
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.list-of-bar{
+    display: flex;
+    list-style-type: none;
+    font-size: 1.2rem;
+    margin: 0 15px 0 0;
+}
+
+.list-of-bar li{
+padding:  15px;
+display: flex; 
+}
+
+.navigationbar .list-of-bar li:hover{
+    background-color: red;
+}
+
+@media screen and (max-width:653px)
+{
+    
+    .navigationbar{
+        display: block;     
+        text-align: center;
+        
+        
+    }
+    
+.pagename .lostworld{
+ padding:20px 20px 0px 0px;
+}
+
+.pagename #menu-icon{ 
+    display: block;
+}
+    .list-of-bar{
+        display:none;
+        
+    }
+
+    .list-of-bar li{
+        justify-content: space-around;
+        animation: animatemenu 1000ms ease-in-out forwards;
+    }
+}
+
+
+@keyframes animatemenu{
+    0%{
+        opacity: 0;
+        transform: translatey(-100px);
+        
+    }
+
+    100%{
+        opacity: 1;
+        
+        transform: translatey(0px);
+    }
+}
+
